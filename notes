@@ -1,0 +1,24 @@
+gcloud container clusters get-credentials cp-os-variant-calling-cluster-test --zone us-east1-c --project s4-oncsuite-dev-181912
+
+
+gcloud compute firewall-rules create --allow=tcp:5555 --target-tags=kubernetes-minion kubernetes-minion-5555
+
+gcloud compute firewall-rules delete kubernetes-minion-5555
+
+gcloud compute firewall-rules delete kubernetes-minion-5672
+
+bin/gcloud compute firewall-rules create --allow=tcp:5672 --target-tags=kubernetes-minion kubernetes-minion-5672
+
+
+# Create Namespace
+kubectl create namespace pramati
+
+# set context
+kubectl config set-context $(kubectl config current-context) --namespace=pramati
+# Validate it
+$ kubectl config view | grep namespace:
+
+kubectl label nodes gke-cp-os-variant-callin-default-pool-c4779994-jwc9 app_type=rabbitmq
+
+kubectl label nodes gke-cp-os-variant-callin-default-pool-c4779994-v2d0 app_type=worker
+kubectl label nodes gke-cp-os-variant-callin-default-pool-c4779994-znn5 app_type=worker

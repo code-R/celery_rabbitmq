@@ -1,0 +1,14 @@
+[2017-11-06 17:25:31,673: WARNING/MainProcess] Exception
+[2017-11-06 17:25:31,674: WARNING/MainProcess] KeyError
+[2017-11-06 17:25:31,674: WARNING/MainProcess] :
+[2017-11-06 17:25:31,674: WARNING/MainProcess] KeyError(140736563844032,)
+[2017-11-06 17:25:31,674: WARNING/MainProcess] in
+[2017-11-06 17:25:31,674: WARNING/MainProcess] <module 'threading' from '/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.pyc'>
+[2017-11-06 17:25:31,674: WARNING/MainProcess] ignored
+[2017-11-06 20:06:47,612: WARNING/MainProcess] Exception
+[2017-11-06 20:06:47,613: WARNING/MainProcess] KeyError
+[2017-11-06 20:06:47,613: WARNING/MainProcess] :
+[2017-11-06 20:06:47,613: WARNING/MainProcess] KeyError(140736563844032,)
+[2017-11-06 20:06:47,613: WARNING/MainProcess] in
+[2017-11-06 20:06:47,613: WARNING/MainProcess] <module 'threading' from '/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.pyc'>
+[2017-11-06 20:06:47,613: WARNING/MainProcess] ignored
